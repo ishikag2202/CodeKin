@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CODEKIN</title>
+        <link href="problems.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="profile.css">
+    </head>
+    <body>
+        <header>
+            <div id="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+                    <g class="logo-triangle">
+                      <path d="M100 160 L180 30 L20 30 Z" fill="none" stroke="#e100ff" stroke-width="4"/>
+                      <path d="M100 140 L165 40 L35 40 Z" fill="none" stroke="#e100ff" stroke-width="4" opacity="0.7"/>
+                      <path d="M100 120 L150 50 L50 50 Z" fill="none" stroke="#e100ff" stroke-width="4" opacity="0.4"/>
+                    </g>
+                    
+                    <text x="220" y="110" font-family="Arial Black, Arial Bold, sans-serif" font-size="100" font-weight="900" fill="#ffffff">CodeKin</text>
+                  </svg>
+            </div>
+            <div class="tabs">
+                <div class="pages">
+                    <a href="homepage.html" class="nav-button">Home</a>
+                    <a href="problems.html" class="nav-button">Practice</a>
+                    <a href="courses.html" class="nav-button">Courses</a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">&#9662;</button>
+                    <div class="dropdown-content">
+                        <a href="Profile.html">Profile</a>
+                        <a href="editprofile.html">Edit Profile</a>
+                        <a href="HelpDesk.html">Help Desk</a>
+                        <a href="logout.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="courses">
+            <div class="box">
+                <img src="https://assets.leetcode.com/users/images/49479bba-73b3-45d2-9272-99e773d784b2_1687290663.3168745.jpeg">
+            </div>
+            <div class="box">
+                <img src="https://assets.leetcode.com/users/images/770789b0-c96b-4663-86d1-baab25534864_1669795265.8012726.png">
+            </div>
+            <div class="box">
+                <img src="https://assets.leetcode.com/users/images/49479bba-73b3-45d2-9272-99e773d784b2_1687290663.3168745.jpeg">
+            </div>
+            <div class="box">
+                <img src="https://assets.leetcode.com/users/images/770789b0-c96b-4663-86d1-baab25534864_1669795265.8012726.png">
+            </div>
+        </div>
+        <div id="content">
+            <div>
+                <h2>WANNA PRACTICE?</h2>
+            </div>
+            <div id="form">
+                <form action="/action_page.php" class="form1 form">
+                    <label for="Tag">Tags:</label>
+                    <select name="Tag" id="Tag">
+                        <option value="Choose">Choose</option>
+                        <option value="Array">Array</option>
+                        <option value="String">String</option>
+                        <option value="Linked List">Linked List</option>
+                        <option value="Sliding Window">Sliding Window</option>
+                        <option value="Two Pointer">Two Pointer</option>
+                        <option value="Graph">Graph</option>
+                        <option value="Tree">Tree</option>
+                        <option value="Recursion">Recursion</option>
+                        <option value="Backtracking">Backtracking</option>
+                        <option value="Dynamic Programming">Dynamic Programming</option>
+                        <option value="Stack/Queue">Stack/ Queue</option>
+                        <option value="Binary Search">Binary Search</option>
+                        <option value="Trie">Trie</option>
+                    </select>
+                </form>
+                <form action="/action_page.php" class="form2 form">
+                    <label for="Difficulty">Difficulty</label>
+                    <select name="Difficulty" id="Difficulty">
+                        <option value="Choose">Choose</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </form>
+                <form action="/action_page.php" class="form3 form">
+                    <label for="Status">Status</label>
+                    <select name="Status" id="Status">
+                        <option value="Choose">Choose</option>
+                        <option value="Solved">Solved</option>
+                        <option value="Attempted">Attempted</option>
+                        <option value="Not Solved">Not Solved</option>
+                    </select>
+                </form>
+                <span>
+                    <span>Problem Name</span>
+                    <span><input type="text" id="text" class="form"></span>
+                </span>
+            </div>
+            <div id="problems">
+                <div class="problem p0">
+                    <span>STATUS</span>
+                    <span>TITLE</span>
+                    <span>DIFFICULTY</span>
+                    <span>CATEGORY</span>
+                    <span>SOLUTION</span>
+                </div>
+                <hr>
+                <div class="problem p1">
+                    <span></span>
+                    <span><a href="problem/Two_Sum.html">Two Sum</a></span>
+                    <span>Easy</span>
+                    <span>Array</span>
+                    <span><a href="https://youtu.be/UXDSeD9mN-k?si=T-5u1obHtDdTn7NN"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p2">
+                    <span></span>
+                    <span><a href="problem/Reversed_Linked_list.html">Reverse Linked List</a></span>
+                    <span>Hard</span>
+                    <span>Linked List</span>
+                    <span><a href="https://youtu.be/D2vI2DNJGd8?si=GKIxVFndYN4QVgFP"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p3">
+                    <span></span>
+                    <span><a href="problem/Jump Game.html">Jump Game</a></span>
+                    <span>Medium</span>
+                    <span>Dynamic Programming</span>
+                    <span><a href="https://youtu.be/tZAa_jJ3SwQ?si=qp2UMIVwHed76mNH"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p4">
+                    <span></span>
+                    <span><a href="problem/Search_in_a_2D_Matrix.html">Search in 2D Matrix</a></span>
+                    <span>Medium</span>
+                    <span>Array</span>
+                    <span><a href="https://youtu.be/JXU4Akft7yk?si=b3uMO9tMofG42HU1"><i class="fa fa-youtube-play" style="font-size:30px;color:red;"></i></a></span>
+                </div>
+                <div class="problem p5">
+                    <span></span>
+                    <span><a href="problem/Valid_Parentheses.html">Valid Parenthesis</a></span>
+                    <span>Easy</span>
+                    <span>Stack/Queue</span>
+                    <span><a href="https://youtu.be/cHT6sG_hUZI?si=JV32XS16s_inuvnV"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p6">
+                    <span></span>
+                    <span>Search in 1D Matrix</span>
+                    <span>Medium</span>
+                    <span>Binary Search</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <!-- <div class="problem p7">
+                    <span></span>
+                    <span>Container With Most Water</span>
+                    <span>Medium</span>
+                    <span>Two Pointer</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p8">
+                    <span></span>
+                    <span>Merge Intervals</span>
+                    <span>Medium</span>
+                    <span>Array</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p9">
+                    <span></span>
+                    <span>Maximum depth of Binary Tree</span>
+                    <span>Easy</span>
+                    <span>Binary Tree</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p10">
+                    <span></span>
+                    <span>Best Time To Buy And Sell Stocks</span>
+                    <span>Easy</span>
+                    <span>Sliding Window</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p11">
+                    <span></span>
+                    <span>Longest Palindromic Substring</span>
+                    <span>Medium</span>
+                    <span>Dynamic Programming</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p12">
+                    <span></span>
+                    <span>Minimum Path Sum</span>
+                    <span>Medium</span>
+                    <span>Dynamic Programming</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p13">
+                    <span></span>
+                    <span>Palindromic Partitioning</span>
+                    <span>Hard</span>
+                    <span>Dynamic Programming</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p14">
+                    <span></span>
+                    <span>Is Graph Bipartite?</span>
+                    <span>Medium</span>
+                    <span>Graph</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p15">
+                    <span></span>
+                    <span>Maximum Star Sum of a Graph</span>
+                    <span>Medium</span>
+                    <span>Graph</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p16">
+                    <span></span>
+                    <span>Graph Connectivity with threshold</span>
+                    <span>Hard</span>
+                    <span>Graph</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p17">
+                    <span></span>
+                    <span>Count Visited Nodes in a Directed Graph</span>
+                    <span>Easy</span>
+                    <span>Sliding Window</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p18">
+                    <span></span>
+                    <span>Min Stack</span>
+                    <span>Medium</span>
+                    <span>Stack/Queue</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p19">
+                    <span></span>
+                    <span>Trapping Rainwater</span>
+                    <span>Hard</span>
+                    <span>Stack/Queue</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p20">
+                    <span></span>
+                    <span><a>Binary Tree Preorder Traversal</a></span>
+                    <span>Easy</span>
+                    <span>Tree</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p21">
+                    <span></span>
+                    <span><a>Next Greater Element I</a></span>
+                    <span>Easy</span>
+                    <span>Stack/Queue</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p22">
+                    <span></span>
+                    <span><a>Design Circular Queue</a></span>
+                    <span>Medium</span>
+                    <span>Stack/Queue</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p23">
+                    <span></span>
+                    <span>Max Values of Equation</span>
+                    <span>Hard</span>
+                    <span>Stack/Queue</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p24">
+                    <span></span>
+                    <span>Number of People Aware of a Secret</span>
+                    <span>Medium</span>
+                    <span>Stack/Queue</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p25">
+                    <span></span>
+                    <span>Search in 2D Matrix</span>
+                    <span>Medium</span>
+                    <span>Binary Search</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p26">
+                    <span></span>
+                    <span>Median of 2 Sorted Arrays</span>
+                    <span>Hard</span>
+                    <span>Binary Search</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p27">
+                    <span></span>
+                    <span>Missing Number</span>
+                    <span>Easy</span>
+                    <span>Binary Search</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p28">
+                    <span></span>
+                    <span>Russian Doll Envelopes</span>
+                    <span>Hard</span>
+                    <span>Binary Search</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p29">
+                    <span></span>
+                    <span>Boundary Traversal Of Binary Tree</span>
+                    <span>Medium</span>
+                    <span>Tree</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p30">
+                    <span></span>
+                    <span>Queen Reconstruction By Height</span>
+                    <span>Hard</span>
+                    <span>Recursion</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p31">
+                    <span></span>
+                    <span>Recyclable and Low Fat Products</span>
+                    <span>Easy</span>
+                    <span>Recursion</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p32">
+                    <span></span>
+                    <span>Backspace String Compare</span>
+                    <span>Easy</span>
+                    <span>Backtracking</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p33">
+                    <span></span>
+                    <span>N Queens Problem</span>
+                    <span>Hard</span>
+                    <span>Backtracking</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p34">
+                    <span></span>
+                    <span>Reverse LL in Given Size of K</span>
+                    <span>Hard</span>
+                    <span>Linked List</span>
+                    <span><a><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div> -->
+                <div class="problem p6">
+                    <span></span>
+                    <span><a href="problem/word_search.html">Word Search</a></span>
+                    <span>Hard</span>
+                    <span>Backtracking</span>
+                    <span><a href="https://youtu.be/pfiQ_PS1g8E?si=jpym404rXTqz7ZVv"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p7">
+                    <span></span>
+                    <span><a href="problem/longest_common_prefix.html">Longest Common Prefix</a></span>
+                    <span>Easy</span>
+                    <span>Trie</span>
+                    <span><a href="https://youtu.be/NPZn9jBrX8U?si=RcyfWNpNV71-hCWo"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p8">
+                    <span></span>
+                    <span><a href="problem/max_xor_with_an_element_from_array.html">Maximum XOR with An Element From Array</a></span>
+                    <span>Hard</span>
+                    <span>Trie</span>
+                    <span><a href="https://youtu.be/Q8LhG9Pi5KM?si=YGeA3NULE4j21Zx-"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p9">
+                    <span></span>
+                    <span><a href="problem/sum_of_beauty_of_all_substrings.html">Sum Of Beauty Of All Substrings</a></span>
+                    <span>Medium</span>
+                    <span>String</span>
+                    <span><a href="https://youtu.be/5XjJs5SBN8g?si=mTcLPyA4duWh1c-i"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+                <div class="problem p10">
+                    <span></span>
+                    <span><a href="problem/shortest_palindrome.html">Shortest Palindrome</a></span>
+                    <span>Hard</span>
+                    <span>String</span>
+                    <span><a href="https://youtu.be/niOT-FK1RH8?si=sLXrDn3jEjHVspiq"><i class="fa fa-youtube-play" style="font-size:30px;color:red"></i></a></span>
+                </div>
+            </div>
+        </div>
+        <script src="problems.js"></script>
+    </body>
+</html>
