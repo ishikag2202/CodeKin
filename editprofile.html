@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - CodeKin</title>
+    <link rel="stylesheet" href="editprofile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200">
+                <!-- Triangle Logo -->
+                <g class="logo-triangle">
+                  <!-- Outer triangle -->
+                  <path d="M100 160 L180 30 L20 30 Z" fill="none" stroke="#e100ff" stroke-width="4"/>
+                  <!-- Middle triangle -->
+                  <path d="M100 140 L165 40 L35 40 Z" fill="none" stroke="#e100ff" stroke-width="4" opacity="0.7"/>
+                  <!-- Inner triangle -->
+                  <path d="M100 120 L150 50 L50 50 Z" fill="none" stroke="#e100ff" stroke-width="4" opacity="0.4"/>
+                </g>
+                
+                <!-- Text "CodeKin" -->
+                <text x="220" y="110" font-family="Arial Black, Arial Bold, sans-serif" font-size="100" font-weight="900" fill="#ffffff">CodeKin</text>
+            </svg>
+        </div>
+        <div class="tabs">
+            <div class="pages">
+                <a href="homepage.html" class="nav-button" id="home">Home</a>
+                <a href="problems.html" class="nav-button" id="problems">Practice</a>
+                <a href="courses.html" class="nav-button" id="courses">Courses</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">&#9662;</button>
+                <div class="dropdown-content">
+                    <a href="Profile.html">Profile</a>
+                    <a href="editprofile.html">Edit Profile</a>
+                    <a href="HelpDesk.html">Help Desk</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Update your profile!</h2>
+        
+        <div class="button-container">
+            <button id="user_edit" type="button" class="edit-btn">
+                <span class="btn-icon">👤</span> Edit Username
+            </button>
+            <button id="email_edit" type="button" class="edit-btn">
+                <span class="btn-icon">✉️</span> Edit Email
+            </button>
+            <button id="pass_edit" type="button" class="edit-btn">
+                <span class="btn-icon">🔐</span> Edit Password
+            </button>
+        </div>
+        
+        <form action="Profile.html" method="get">
+            <div class="form-group" id="edit-section"></div>
+            <div class="form-group submit-section">
+                <button id="update-btn" type="submit">Update Profile</button>
+                <p id="alert-msg"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="editprofile.js"></script>
+</body>
+</html>
